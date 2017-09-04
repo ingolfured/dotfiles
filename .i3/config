@@ -43,6 +43,16 @@ bindsym $mod+z exec --no-startup-id morc_menu
 exec --no-startup-id xrandr --dpi 192
 
 
+#Icelandic keyboard
+exec --no-startup-id setxkbmap -option grp:alt_shift_toggle "us,is" -option grp_led:caps
+
+#make keyboard faster
+exec --no-startup-id xset r rate 200 50
+
+#ssh-agent on startup
+exec --no-startup-id eval $(ssh-agent) && ssh-add
+exec --no-startup-id gnome-settings-daemon
+
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
