@@ -35,4 +35,8 @@ colors() {
 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
+
+. /usr/share/fzf/key-bindings.bash
+. /usr/share/fzf/completion.bash
+
 alias config='/usr/bin/git --git-dir=/home/ingo/.cfg/ --work-tree=/home/ingo'
