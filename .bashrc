@@ -39,4 +39,6 @@ colors() {
 . /usr/share/fzf/key-bindings.bash
 . /usr/share/fzf/completion.bash
 
+export VISUAL="vim"
+export EDITOR="vim"
 alias config='/usr/bin/git --git-dir=/home/ingo/.cfg/ --work-tree=/home/ingo'
