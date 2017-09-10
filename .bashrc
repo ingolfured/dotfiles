@@ -42,3 +42,7 @@ colors() {
 export VISUAL="vim"
 export EDITOR="vim"
 alias config='/usr/bin/git --git-dir=/home/ingo/.cfg/ --work-tree=/home/ingo'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+exec fish
